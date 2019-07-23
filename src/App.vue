@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <!--<router-link to="/test">test</router-link>-->
     <router-view ></router-view>
+    <!-- 如果不同路由渲染同一组件，会导致数据不更新，这时候可以巧妙的加一个不同的Key -->
+    <!-- <router-view :key="$route.fullpath"></router-view> -->
   </div>
 </template>
 
@@ -15,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  @import 'styles/common.css';
+  @import 'assets/styles/common.css';
 #app {
   /*border: red 1px solid;*/
   height: 100%;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        Nice
+        Nice!!!
         <Row>
             <i-col span="12">i-col-12</i-col>
             <i-col span="12">i-col-12</i-col>

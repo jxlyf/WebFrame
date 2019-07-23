@@ -1,29 +1,51 @@
 <template>
     <div class="layout">
-        <Layout style="height: 100%">
-            <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed" style="box-shadow:1px 4px 15px #808695">
+        <Layout style="height: 100%;border: red 1px solid;">
+            <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed"
+                   style="box-shadow:1px 4px 10px #808695">
                 <div style="height: 64px;color: #5cadff;text-align: center;line-height: 64px;">
                     <!-- 顶部图标 -->
                     <h3>
                         <span>{{isCollapsed ? 'Web': 'WebFrame'}}</span>
                     </h3>
                 </div>
-                <Menu active-name="1-2" theme="dark" width="auto" :class="menuitemClasses">
-                    <MenuItem name="1-1">
-                        <Icon type="ios-navigate"></Icon>
-                        <span>Option 1</span>
-                    </MenuItem>
-                    <MenuItem name="1-2">
-                        <Icon type="ios-search"></Icon>
-                        <span>Option 2</span>
-                    </MenuItem>
-                    <MenuItem name="1-3">
-                        <Icon type="ios-settings"></Icon>
-                        <span>Option 3</span>
-                    </MenuItem>
+                <Menu active-name="1-3" theme="dark" width="auto" :class="menuitemClasses">
+                    <Submenu name="1">
+                        <template slot="title">
+                            <Icon type="ios-navigate"></Icon>
+                            <span>{{isCollapsed ? '': 'Item 1'}}</span>
+                        </template>
+                        <div v-if="!isCollapsed">
+                            <MenuItem name="1-1"><span>Option 1</span></MenuItem>
+                            <MenuItem name="1-2"><span>Option 2</span></MenuItem>
+                            <MenuItem name="1-3"><span>Option 3</span></MenuItem>
+                        </div>
+                    </Submenu>
+                    <Submenu name="2">
+                        <template slot="title">
+                            <Icon type="ios-keypad"></Icon>
+                            <span>{{isCollapsed ? '': 'Item 2'}}</span>
+                        </template>
+                        <div v-if="!isCollapsed">
+                            <MenuItem name="1-1"><span>Option 1</span></MenuItem>
+                            <MenuItem name="1-2"><span>Option 2</span></MenuItem>
+                            <MenuItem name="1-3"><span>Option 3</span></MenuItem>
+                        </div>
+                    </Submenu>
+                    <Submenu name="3">
+                        <template slot="title">
+                            <Icon type="ios-analytics"></Icon>
+                            <span>{{isCollapsed ? '': 'Item 3'}}</span>
+                        </template>
+                        <div v-if="!isCollapsed">
+                            <MenuItem name="1-1"><span>Option 1</span></MenuItem>
+                            <MenuItem name="1-2"><span>Option 2</span></MenuItem>
+                            <MenuItem name="1-3"><span>Option 3</span></MenuItem>
+                        </div>
+                    </Submenu>
                 </Menu>
             </Sider>
-            <Layout>
+            <Layout style="border: blue 1px solid;">
                 <Header :style="{padding: 0}" class="layout-header-bar">
                     <Menu mode="horizontal" active-name="1">
                         <div class="layout-logo">
@@ -53,6 +75,8 @@
                 <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
                     Content
                 </Content>
+                <Footer class="layout-footer-center" style="height: 20px;line-height: 20px;margin: 0;"><i>liyanfa &copy;
+                    com</i></Footer>
             </Layout>
         </Layout>
     </div>
@@ -126,6 +150,10 @@
 
     .rotate-icon {
         transform: rotate(-90deg);
+    }
+
+    .layout-footer-center {
+        text-align: center;
     }
 
     .menu-item span {

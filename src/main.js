@@ -1,12 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
 import VueResource from 'vue-resource';
-//路由配置文件
 import VueRouter from 'vue-router';
 import iView from 'iview';
-import Routers from './libs/router.js';
 import './plugins/iview.js';
 import 'iview/dist/styles/iview.css'
+
+//路由配置文件
+import Routers from './assets/libs/router.js';
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
