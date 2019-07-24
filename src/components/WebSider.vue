@@ -4,8 +4,7 @@
     侧边栏导航数据来源：data中的menu数组。
 -->
 <template>
-    <Sider hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed"
-           style="box-shadow:1px 4px 10px #808695">
+    <Sider hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed" id="sider" >
         <div style="height: 64px;color: #5cadff;text-align: center;line-height: 64px;">
             <!-- 顶部图标 -->
             <h3>
@@ -41,6 +40,7 @@
         },
         data() {
             return {
+                theme:'dark',
                 menu: [
                     {
                         title: 'Tables',
@@ -95,6 +95,9 @@
 </script>
 
 <style scoped>
+    #sider{
+        box-shadow:1px 4px 10px #808695
+    }
     .menu-item span {
         display: inline-block;
         overflow: hidden;

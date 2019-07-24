@@ -4,7 +4,7 @@
         <Layout>
             <top-bar :is-collapsed="isCollapsed" @collapsedSider="collapsedSider"></top-bar>
             <contents></contents>
-            <footer-info></footer-info>
+            <!--<footer-info></footer-info>-->
         </Layout>
     </Layout>
 </template>
@@ -13,15 +13,15 @@
     import WebSider from '../components/WebSider';
     import WebHeader from '../components/WebHeader';
     import WebContent from '../components/WebContent';
-    import WebFooter from '../components/WebFooter';
+    // import WebFooter from '../components/WebFooter';
 
     export default {
         name: "layout1",
         components: {
             'side-bar': WebSider,
             'top-bar': WebHeader,
-            'contents': WebContent,
-            'footer-info': WebFooter
+            'contents': WebContent
+            // 'footer-info': WebFooter
         },
         data() {
             return {

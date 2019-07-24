@@ -6,6 +6,7 @@
 import test from '../../views/test';
 // import index from '../../views/index';
 import notFound from '../../views/404';
+import signin from '../../views/signin';
 import layout1 from '../../layout/layout1';
 import table1 from '../../components/table/table1';
 import table2 from '../../components/table/table2';
@@ -22,7 +23,7 @@ const routers = [
     //默认路由，当没有对应的路由时，跳转到此页面
     {path: '*', component: notFound},
     //404页面
-    {path: '/404', component: notFound},
+    {path: '/login', component: signin},
 
     {
         path: '/table', component: layout1,
