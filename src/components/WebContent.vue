@@ -1,5 +1,5 @@
 <template>
-    <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
+    <Content :style="{margin: '20px', background: '#fff', minHeight: '260px',overflow:'auto'}">
         <router-view></router-view>
     </Content>
 </template>

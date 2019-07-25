@@ -87,6 +87,21 @@
                                 name: 'carousel3',
                             }
                         ]
+                    }, {
+                        title: 'Util',
+                        icon: 'ios-cube',
+                        menuItem: [
+                            {
+                                to: '/util/util1',
+                                name: 'util1',
+                            }, {
+                                to: '/util/util2',
+                                name: 'util2',
+                            }, {
+                                to: '/util/util3',
+                                name: 'util3',
+                            }
+                        ]
                     }
                 ]
             }

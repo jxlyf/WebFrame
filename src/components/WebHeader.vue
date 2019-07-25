@@ -60,7 +60,6 @@
                 this.isFullscreen = !screenfull.isFullscreen;
             },
             logout() {
-                localStorage.clear();
                 this.$router.push("/login");
             }
         }

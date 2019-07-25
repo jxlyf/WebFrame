@@ -2,6 +2,10 @@
     <Form :model="formItem" :label-width="80">
         <FormItem label="Input">
             <Input v-model="formItem.input" placeholder="Enter something..."/>
+            <br>
+            <br>
+            md5:"<span style="color: red">{{getMD5}}</span>"
+            <hr>
         </FormItem>
         <FormItem label="Select">
             <Select v-model="formItem.select">
@@ -54,12 +58,15 @@
     </Form>
 </template>
 <script>
+    // import md5 from 'md5';
+    import md5 from 'js-md5';
     export default {
         name:'form1',
         data () {
             return {
                 formItem: {
                     input: '',
+                    md5: '',
                     select: '',
                     radio: 'male',
                     checkbox: [],
@@ -69,6 +76,11 @@
                     slider: [20, 50],
                     textarea: ''
                 }
+            }
+        },
+        computed:{
+            getMD5(){
+                return md5(this.formItem.input);
             }
         }
     }

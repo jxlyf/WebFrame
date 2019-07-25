@@ -43,4 +43,14 @@ npm run lint
 ```
 
 ###目录结构
+src/assets 下存放各种资源文件
 
+src/components 存放各种组件
+
+src/plugins 存放插件
+
+src/view 存放试图
+
+src/layout 存放整体布局组件
+
+src/App.vue、main.js等文件不解释。

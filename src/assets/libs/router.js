@@ -17,6 +17,7 @@ import form3 from '../../components/form/form3';
 import carousel1 from '../../components/carousel/carousel1';
 import carousel2 from '../../components/carousel/carousel2';
 import carousel3 from '../../components/carousel/carousel3';
+import util1 from '../../components/util/util1';
 
 const routers = [
     {path: '/test', component: test},
@@ -78,6 +79,19 @@ const routers = [
             }, {
                 path: 'carousel3',
                 component: carousel3
+            }
+        ]
+    },
+
+    {
+        path: '/util', component: layout1,
+        children: [
+            {
+                path: '',
+                component: util1
+            }, {
+                path: 'util1',
+                component: util1
             }
         ]
     }

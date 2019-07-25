@@ -2,13 +2,30 @@
     <div>
         <div class="wrap">
             <div style="margin-top:-20px;">
-                <Icon type="ios-arrow-round-back" @click="$router.go(-1)" size="40" title="返回"/>
+                <Icon type="ios-arrow-round-back" @click="$router.push('/login')" size="40" title="登陆"/>
                 <h1 class="animated swing">404</h1>
                 <h4>We're sorry, but the page you were looking for doesn't exist.</h4>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+    export default {
+        name: 'notFound',
+        methods: {
+            login () {
+                alert("sss");
+                alert();
+                this.$Message.success('Success!');
+                this.$router.push('/table');
+            }
+        }
+    }
+
+</script>
+
+
 <style scoped lang="scss">
     .wrap {
         height: 100vh;
@@ -28,4 +45,7 @@
             color: #666;
         }
     }
+
+
 </style>
+
