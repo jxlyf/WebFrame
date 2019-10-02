@@ -7,7 +7,7 @@
 
     export default {
         name: "table1",
-        // components: { expandRow },
+        // view: { expandRow },
         data() {
             return {
                 columns: [

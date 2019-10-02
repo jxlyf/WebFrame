@@ -1,0 +1,69 @@
+{
+  "theme": "dark",
+  "menu": [
+    {
+      "title": "Tables",
+      "icon": "ios-navigate",
+      "menuItem": [
+        {
+          "to": "/table/table",
+          "name": "table1"
+        },
+        {
+          "to": "/table/table2",
+          "name": "table2"
+        },
+        {
+          "to": "/table/table3",
+          "name": "table3"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "icon": "ios-keypad",
+      "menuItem": [
+        {
+          "to": "/form/form1",
+          "name": "form1"
+        },
+        {
+          "to": "/form/form2",
+          "name": "form2"
+        },
+        {
+          "to": "/form/form3",
+          "name": "form3"
+        }
+      ]
+    },
+    {
+      "title": "Carousel",
+      "icon": "ios-expand",
+      "menuItem": [
+        {
+          "to": "/carousel/carousel1",
+          "name": "carousel1"
+        },
+        {
+          "to": "/carousel/carousel2",
+          "name": "carousel2"
+        },
+        {
+          "to": "/carousel/carousel3",
+          "name": "carousel3"
+        }
+      ]
+    },
+    {
+      "title": "Util",
+      "icon": "ios-cube",
+      "menuItem": [
+        {
+          "to": "/util/util1",
+          "name": "util1"
+        }
+      ]
+    }
+  ]
+}

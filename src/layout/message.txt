@@ -1,5 +1,0 @@
-该文件夹中的vue组件是根据各个小组件(src/components目录中)来设计整体界面。
-layout1：上中下结构。
-layout2：顶部-侧边布局-通栏 .
-layout3：
-layout4：

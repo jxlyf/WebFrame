@@ -1,10 +1,18 @@
-<template functional>
+<!--
+404，页面不存在界面
+-->
+<template>
     <div>
         <div class="wrap">
             <div style="margin-top:-20px;">
-                <Icon type="ios-arrow-round-back" @click="$router.push('/login')" size="40" title="登陆"/>
+                <Poptip trigger="hover" content="返回到上一页面">
+                    <Icon type="md-arrow-round-back" @click="$router.go(-1)" size="40" />
+                </Poptip>
+                <Poptip trigger="hover"  content="返回登陆界面">
+                    <Icon type="md-log-in" @click="$router.push('/login')" size="40" />
+                </Poptip>
                 <h1 class="animated swing">404</h1>
-                <h4>We're sorry, but the page you were looking for doesn't exist.</h4>
+                <h2>对不起，您访问的页面不存在！</h2>
             </div>
         </div>
     </div>
@@ -12,15 +20,7 @@
 
 <script>
     export default {
-        name: 'notFound',
-        methods: {
-            login () {
-                alert("sss");
-                alert();
-                this.$Message.success('Success!');
-                this.$router.push('/table');
-            }
-        }
+        name: 'notFound'
     }
 
 </script>
@@ -33,6 +33,7 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
+
         h1 {
             text-align: center;
             font-size: 10em;
@@ -41,11 +42,10 @@
             letter-spacing: 40px;
             margin: 0;
         }
+
         h4 {
             color: #666;
         }
     }
-
-
 </style>
 

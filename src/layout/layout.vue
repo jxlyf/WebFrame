@@ -10,10 +10,10 @@
 </template>
 
 <script>
-    import WebSider from '../components/WebSider';
-    import WebHeader from '../components/WebHeader';
-    import WebContent from '../components/WebContent';
-    // import WebFooter from '../components/WebFooter';
+    import WebSider from './WebSider';
+    import WebHeader from './WebHeader';
+    import WebContent from './WebContent';
+    // import WebFooter from '../view/WebFooter';
 
     export default {
         name: "layout1",

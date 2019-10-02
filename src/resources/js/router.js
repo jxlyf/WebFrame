@@ -3,24 +3,21 @@
 *1:将你需要用到的组件添加进来
 *2:将路由添加到 routers 数组对象中，参考'/test'格式'
  */
-import test from '../../views/test';
-// import index from '../../views/index';
-import notFound from '../../views/404';
-import signin from '../../views/signin';
-import layout1 from '../../layout/layout1';
-import table1 from '../../components/table/table1';
-import table2 from '../../components/table/table2';
-import table3 from '../../components/table/table3';
-import form1 from '../../components/form/form1';
-import form2 from '../../components/form/form2';
-import form3 from '../../components/form/form3';
-import carousel1 from '../../components/carousel/carousel1';
-import carousel2 from '../../components/carousel/carousel2';
-import carousel3 from '../../components/carousel/carousel3';
-import util1 from '../../components/util/util1';
+import notFound from '../../view/others/404';
+import signin from '../../view/others/login';
+import layout1 from '../../layout/layout';
+import table1 from '../../view/table/table1';
+import table2 from '../../view/table/table2';
+import table3 from '../../view/table/table3';
+import form1 from '../../view/form/form1';
+import form2 from '../../view/form/form2';
+import form3 from '../../view/form/form3';
+import carousel1 from '../../view/carousel/carousel1';
+import carousel2 from '../../view/carousel/carousel2';
+import carousel3 from '../../view/carousel/carousel3';
+import util1 from '../../view/util/util1';
 
 const routers = [
-    {path: '/test', component: test},
     //默认路由，当没有对应的路由时，跳转到此页面
     {path: '*', component: notFound},
     //404页面

@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  @import 'assets/styles/common.css';
+  @import 'resources/css/common.css';
 #app {
   /*border: red 1px solid;*/
   height: 100%;

@@ -3,11 +3,10 @@ import App from './App.vue';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import iView from 'iview';
-import './plugins/iview.js';
-import 'iview/dist/styles/iview.css'
+import 'iview/dist/styles/iview.css';
 
 //路由配置文件
-import Routers from './assets/libs/router.js';
+import Routers from './resources/js/router.js';
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
