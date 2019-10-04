@@ -8,7 +8,7 @@
         <div style="height: 64px;color: deepskyblue;text-align: center;line-height: 64px;font-size: large">
             <!-- 顶部图标 -->
             <h3>
-                <span>{{isCollapsed ? 'WebFrame': 'Web'}}</span>
+                <span>{{isCollapsed ? 'Web': 'WebFrame'}}</span>
             </h3>
         </div>
         <Menu active-name="1-3" theme="dark" width="auto" :class="menuitemClasses">
