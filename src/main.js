@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
+import 'babel-polyfill';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import iView from 'iview';
