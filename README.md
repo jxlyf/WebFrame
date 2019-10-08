@@ -43,11 +43,7 @@ npm run lint
 ```
 
 ###目录结构
-src/assets 下存放各种资源文件
-
-src/components 存放各种组件
-
-src/plugins 存放插件
+src/resources 下存放各种资源文件
 
 src/view 存放试图
 
